@@ -1,0 +1,19 @@
+package Assignment7;
+
+public class ShiftsNum {
+	public static boolean canShift(String s, String result)
+	{
+		if(s.length()!=result.length())
+		{
+			return false;
+		}
+		String concatenated=s+s;
+		return concatenated.contains(result);
+	}
+	public static void main(String[] args) {
+		String s="abcde";
+		String result="cdeab";
+		System.out.println(canShift(s,result));
+	}
+
+}
